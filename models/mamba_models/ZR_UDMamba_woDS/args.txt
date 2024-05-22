@@ -1,0 +1,20 @@
+ppath: /home/cavin/Experiment/ZR/EXP/Med3D/models/mamba_models
+name: ZR_UDMamba_woDS
+arch: UDMamba
+deepsupervision: False
+dataset: ZR
+input_channels: 4
+resume_path: 
+image_ext: png
+mask_ext: png
+aug: False
+loss: BCEDiceLoss
+epochs: 10000
+early_stop: 20
+batch_size: 48
+optimizer: Adam
+scheduler: ExponentialLR
+lr: 0.001
+momentum: 0.9
+weight_decay: 0.0001
+nesterov: False
